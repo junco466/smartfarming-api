@@ -27,4 +27,4 @@ let dataSchema = new Schema(
 
 );
 
-module.exports = mongoose.model('farmData', dataSchema)
+module.exports = mongoose.model('farmModel', dataSchema)

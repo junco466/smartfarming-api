@@ -1,27 +1,27 @@
-const presionModel = require('./model');
+const farmModel = require('./model');
 
 function getAllData(){
-    return presionModel.find()
+    return farmModel.find()
 }
 
 function getFlujo(){
-    return presionModel.find({},"sensor.flujo time.fecha time.hora")
+    return farmModel.find({},"sensor.flujo time.fecha time.hora")
 }
 
 function getCo2(){
-    return presionModel.find({},"sensor.co2 time.fecha time.hora")
+    return farmModel.find({},"sensor.co2 time.fecha time.hora")
 }
 
 function getHuemdad(){
-    return presionModel.find({},"sensor.huemdad time.fecha time.hora")
+    return farmModel.find({},"sensor.huemdad time.fecha time.hora")
 }
 
 function getTemp(){
-    return presionModel.find({},"sensor.temperatura time.fecha time.hora")
+    return farmModel.find({},"sensor.temperatura time.fecha time.hora")
 }
 
 function addData(data){
-    let newData = new presionModel(data)
+    let newData = new farmModel(data)
     return newData.save();
 }
 
