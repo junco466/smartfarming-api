@@ -1,0 +1,38 @@
+{
+  "name": "smartfarming-backend",
+  "version": "1.0.0",
+  "description": "API REST para el servicio de los datos obtenidos en el proyecto de granjas inteligentes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/junco466/smartfarming-api.git"
+  },
+  "keywords": [
+    "Node",
+    "communications"
+  ],
+  "author": "Camilo Sepulveda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/junco466/smartfarming-api/issues"
+  },
+  "homepage": "https://github.com/junco466/smartfarming-api#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.2",
+    "multer": "^1.4.5-lts.1",
+    "socket.io": "^4.5.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.27.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^3.0.1",
+    "prettier": "^2.7.1"
+  }
+}
